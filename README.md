@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/62971b33-70d5-4b8b-9afe-72bb1411ee8e/deploy-status)](https://app.netlify.com/sites/svelte-isbn-reader/deploys)
 # Svelte ISBN barcode scanner and search App
 
 Work in progress.
@@ -8,6 +9,7 @@ TODO:
 * Add library feature
 * Add user settings feature
 * Store library and user settings (IndexedDB or FaunaDB)
+* Fix browser compatability issues
 
 JAMstack ISBN barcode reader and search app, using [ISBN DB](https://isbndb.com/) API for fetching book information, from ISBN or author name. [Netlify functions (AWS Lambda)](https://docs.netlify.com/functions/overview/) are used to connect the frontend with the backend APIs. [Snowpack](https://www.snowpack.dev/) was used as the build tool.
 
