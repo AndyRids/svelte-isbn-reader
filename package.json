@@ -1,0 +1,32 @@
+{
+  "author": "Andy Ridyard",
+  "license": "MIT",
+  "name": "isbn-reader",
+  "description": "ISBN barcode reader",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "web-test-runner \"src/**/*.test.js\"",
+    "netlify-dev": "netlify dev"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "quagga": "^0.12.1",
+    "svelte": "^3.24.0"
+  },
+  "devDependencies": {
+    "@snowpack/plugin-dotenv": "^2.0.5",
+    "@snowpack/plugin-svelte": "^3.5.0",
+    "@snowpack/web-test-runner-plugin": "^0.2.0",
+    "@testing-library/svelte": "^3.0.0",
+    "@web/test-runner": "^0.12.0",
+    "chai": "^4.2.0",
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-svelte3": "^3.0.0",
+    "rollup": "^2.39.0",
+    "snowpack": "^3.0.1",
+    "snowpack-plugin-rollup-bundle": "^0.4.4"
+  }
+}
