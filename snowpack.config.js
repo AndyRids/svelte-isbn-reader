@@ -7,10 +7,10 @@ module.exports = {
   plugins: [
     '@snowpack/plugin-svelte',
     '@snowpack/plugin-dotenv',
-    ['snowpack-plugin-rollup-bundle', {
-      emitHtmlFiles: false,
-      entrypoints: 'build/dist/App.svelte.js',
-    }],
+    // ['snowpack-plugin-rollup-bundle', {
+    //   emitHtmlFiles: false,
+    //   entrypoints: 'build/dist/App.svelte.js',
+    // }],
   ],
   routes: [
     /* Example: Enable an SPA Fallback in development: */
