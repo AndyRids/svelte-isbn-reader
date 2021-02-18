@@ -22,8 +22,8 @@ Note:
 To enable use without Netlify CLI, I've left the original API fetch function in src/api/no-functions, which can be used by
 changing the API function like so, in ScannerISBN, SearchAuthor & SearchISBN components (src/components - scanning & searching):
 
-* from: ```javascript import getBookDetails from '../../api/getBookDetails';```
-* to: ```javascript import getBookDetails from '../../api/no-functions/getBookDetails';```
+* from: ```import getBookDetails from '../../api/getBookDetails';```
+* to: ```import getBookDetails from '../../api/no-functions/getBookDetails';```
 
 .env file will then need: SNOWPACK_PUBLIC_ISBN_DB_KEY=45341_...
 
