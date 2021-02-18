@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  color: #002d3e;
+  font-size: 16px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+
+  --background-main: #72A1B7;
+  --background-section: #9DCDE3;
+  --background-modal: rgba(0, 45, 62, 0.8);
+  --background-hover: #e7fdff80;
+  --background-spinner: linear-gradient(-220deg,#48788C 0%,#1D5164 40%,#174C5F 80%,#002D3E 100%);
+
+  --color-stroke: rgb(0, 45, 62);
+
+  --dark-shadow: rgba(29, 81, 100, 0.702);
+  --light-shadow: rgba(233, 252, 255, 0.5);
+
+  --dark-shadow-button: #1d5164b3;
+  --light-shadow-button: #abdff7;
+
+  --border: rgba(72, 120, 140, 0.1);
+  --button-border: 1px solid #e4e3e3;
+
+  --radius-section: 10px;
+  --radius-button: 5px;
+  --radius-input: 5px;
+
+  --box-shadow-main: 20px 20px 20px var(--dark-shadow),
+                    -20px -20px 20px var(--light-shadow);
+
+  --box-shadow-section: 5px 10px 35px -10px var(--dark-shadow),
+                       -5px -10px 35px -12px var(--light-shadow);
+
+  --box-shadow-button: 1px 3px 10px -2px var(--dark-shadow),
+                      -1px -3px 10px -2px var(--light-shadow-button);
+
+  --box-shadow-loader: 5px 10px 35px -10px var(--dark-shadow),
+                      -5px -10px 35px -10px var(--light-shadow),
+                 inset 10px 10px 15px -10px var(--dark-shadow),
+                 inset -10px -10px 15px -10px var(--dark-shadow);
+
+  --box-shadow-loader-before: inset 10px 10px 20px -10px var(--dark-shadow),
+                              inset -5px -5px 20px -10px var(--light-shadow);
+
+}
+
+.body {
+  background: var(--background-main);
+  height: 100vh;
+  width: 100%;
+}
+
+.wrapper-flex {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.wrapper-flex--start {
+  justify-content: start;
+}
+
+.button {
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-button);
+  box-shadow: var(--box-shadow-button);
+  cursor: pointer;
+  display: flex;
+  font-family: inherit;
+  justify-content: center;
+  padding: 0;
+  transition: background 600ms;
+}
+
+.button:hover {
+  background: var(--background-hover);
+}
+
+.button:focus {
+  outline-style: solid;
+  outline-color: transparent;
+  box-shadow: 0 0 0 3px #5a7abe;
+}
+
+.button__icon {
+  pointer-events: none;
+}
+
+.drawingBuffer {
+  border-radius: var(--radius-section);
+  position: absolute;
+  bottom: 0;
+  left: calc((640px - 50%));
+  z-index: 3;
+}
+
+video {
+  z-index: 2;
+}
