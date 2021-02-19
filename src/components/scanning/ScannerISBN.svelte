@@ -43,7 +43,7 @@
       left: '0%',
       bottom: '0%'
     },
-    frequency: 'full',
+    frequency: 2,
     locator:
     {
       patchSize: 'medium',
@@ -240,17 +240,14 @@
     width: 100%;
   }
 
-  .wrapper-loader--results {
-    height: calc(100% - 110px);
-    border: 2px solid red;
-  }
+  .wrapper-loader--results { height: calc(100% - 110px); }
 
   .viewport-guide {
     align-items: center;
     display: flex;
     height: 480px;
     justify-content: center;
-    left: calc(0 - (640px - 100%));
+    left: calc(640px - 500%);
     position: absolute;
     top: calc(0 - (100% - 240px));
     width: 640px;
@@ -274,7 +271,6 @@
 
   .heading__button {
     height: 44px;
-    position: relative;
     width: 44px;
   }
 
