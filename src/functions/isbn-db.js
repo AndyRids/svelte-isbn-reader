@@ -2,7 +2,7 @@
 const fetch = require('node-fetch')
 
 exports.handler = (event, context) => {
-  // LocationIQ API key
+  // ISBN DB API key
   const API_KEY = process.env.ISBN_DB_KEY;
 
   // create new headers object
