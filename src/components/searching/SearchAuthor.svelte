@@ -48,9 +48,10 @@
 
       {#if bookDetails}
         {#await bookDetails}
-
-          <Loader />
-
+          <div class="wrapper-loader">
+            <Loader />
+          </div>
+        
         {:then { books }}
 
           {#each books as book, index}
@@ -168,12 +169,12 @@
   }
 
   .results {
+    /* align-content: center; */
     align-items: center;
     border: 1px solid var(--border);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    gap: 30px 20px;
+    grid-template-columns: repeat(auto-fill, 172px);
     height: 100%;
     justify-content: center;
     max-width: 500px;
@@ -181,8 +182,16 @@
     width: 100%;
   }
 
-  /* trigger the flex 20px row gap after the final child element */
-  .results::after { content: ''; width: 100%; height: 1px; }
+  .wrapper-loader {
+    align-items: center;
+    bottom: 105px;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
   .card {
     align-items: center;
