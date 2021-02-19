@@ -1,5 +1,5 @@
 <script>
-
+  import { fade } from 'svelte/transition';
   // book details
   export let book = {};
   // error message from API fetch / book not found
@@ -12,7 +12,7 @@
 
 </script>
 
-<div class="wrapper-modal">
+<div transition:fade="{{ duration: 200 }}" class="wrapper-modal">
 
   <article class="book-details">
     <div class="book-details__heading">
@@ -55,11 +55,12 @@
   .wrapper-modal {
     align-items: center;
     background: var(--background-modal);
+    bottom: 0;
     display: flex;
     height: 100%;
     justify-content: center;
     left: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 5;
