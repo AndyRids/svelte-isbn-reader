@@ -29,6 +29,8 @@
     for = "/*"
     [headers.values]
       X-Content-Type-Options = 'nosniff'
+      
+  [[headers]]
     for = "/icons/*"
     [headers.values]
       Content-Type = 'image/svg+xml; charset=utf-8'
