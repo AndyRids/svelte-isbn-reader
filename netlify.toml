@@ -24,3 +24,8 @@
   query = { format = ':format', query = ':query' }
   status = 200
   force = true
+
+  [[headers]]
+    for = "/*"
+    [headers.values]
+      X-Content-Type-Options = 'no-sniff'
