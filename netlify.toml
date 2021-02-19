@@ -28,4 +28,7 @@
   [[headers]]
     for = "/*"
     [headers.values]
-      X-Content-Type-Options = 'no-sniff'
+      X-Content-Type-Options = 'nosniff'
+    for = "/icons/*"
+    [headers.values]
+      Content-Type = 'image/svg+xml; charset=utf-8'
