@@ -3,7 +3,7 @@
 
 Work in progress.
 
-TODO: 
+TODO:
 
 * Change API to OpenLibrary from ISBN DB
 * Add library feature
@@ -86,7 +86,6 @@ See the section about running tests for more information.
 
 ### npm run build
 
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
+Builds a static copy of your site to the `build/` folder and uses Rollup to bundle.
 
-**For the best production performance:** Add a build bundler plugin like [@snowpack/plugin-webpack](https://github.com/snowpackjs/snowpack/tree/master/plugins/plugin-webpack) or [snowpack-plugin-rollup-bundle](https://github.com/ParamagicDev/snowpack-plugin-rollup-bundle) to your `snowpack.config.json` config file.
+**For the best production performance:** Add a build bundler plugin like [@snowpack/plugin-webpack](https://github.com/snowpackjs/snowpack/tree/master/plugins/plugin-webpack) or [snowpack-plugin-rollup-bundle](https://github.com/ParamagicDev/snowpack-plugin-rollup-bundle) to your `snowpack.config.json` config file. This App uses snowpack-plugin-rollup.
