@@ -1,5 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/62971b33-70d5-4b8b-9afe-72bb1411ee8e/deploy-status)](https://app.netlify.com/sites/svelte-isbn-reader/deploys)
-# Svelte ISBN barcode scanner and search App [view site](https://svelte-isbn-reader.netlify.app/)
+# Svelte ISBN barcode scanner and search App ([view site](https://svelte-isbn-reader.netlify.app/))
 
 Work in progress.
 
