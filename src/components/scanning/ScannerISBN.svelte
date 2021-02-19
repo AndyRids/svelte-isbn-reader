@@ -1,4 +1,5 @@
 <script>
+  // 
   import { onMount, onDestroy } from 'svelte';
 
   // APIs
@@ -19,8 +20,6 @@
   let isTorch = false;
   let isModal = false;
   let bookDetails;
-
-  $: console.log(bookDetails);
 
   const config = {
     inputStream:
@@ -89,7 +88,7 @@
 
     // get active camera track
     const track = Quagga.CameraAccess.getActiveTrack();
-
+    // console.log(track.getSettings());
     // define torch status options based on status flag
     const options = isTorch ? { advanced: [{ torch: true }] } : { advanced: [{ torch: false }] };
 
