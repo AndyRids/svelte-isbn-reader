@@ -23,19 +23,19 @@
 
     <li class="nav__item">
       <button on:click="{searchHandler}" class="button nav__button button--books" type="button">
-        <img class="button__icon" src="./icons/buttons/books.svg" alt="books" width="35px" height="35px" />
+        <img class="button__icon" src="./icons/buttons/books.svg" alt="books" width="36px" height="36px" />
       </button>
     </li>
 
     <li class="nav__item">
       <button on:click="{popupHandler}" class="button nav__button button--add" type="button">
-        <img class="button__icon" src="./icons/buttons/add.svg" alt="add" width="35px" height="35px" style="--degrees: {isAdd && !searchActive && !scannerActive ? '45deg' : '0deg'}" />
+        <img class="button__icon" src="./icons/buttons/add.svg" alt="add" width="36px" height="36px" style="--degrees: {isAdd && !searchActive && !scannerActive ? '45deg' : '0deg'}" />
       </button>
     </li>
 
     <li class="nav__item">
       <button on:click="{() => {}}" class="button nav__button button--settings" type="button">
-        <img class="button__icon" src="./icons/buttons/settings.svg" alt="settings" width="35px" height="35px" />
+        <img class="button__icon" src="./icons/buttons/settings.svg" alt="settings" width="36px" height="36px" />
       </button>
     </li>
 
@@ -43,21 +43,21 @@
       <ul transition:fly="{{ x: -230, duration: 200 }}" class="nav__popup-list">
           <li class="nav__popup-item">
             <button on:click="{scannerHandler}" class="button nav__button button--barcode" type="button">
-              <img class="button__icon" src="./icons/buttons/barcode.svg" alt="scan" width="35px" height="35px" />
+              <img class="button__icon" src="./icons/buttons/barcode.svg" alt="scan" width="36px" height="36px" />
             </button>
             <div class="nav__description">Scan ISBN</div>
           </li>
 
           <li class="nav__popup-item">
             <button on:click="{searchHandler}" class="button nav__button button--search" type="button" data-component="SearchISBN">
-              <img class="button__icon" src="./icons/buttons/search.svg" alt="Search" width="35px" height="35px" />
+              <img class="button__icon" src="./icons/buttons/search.svg" alt="Search" width="36px" height="36px" />
             </button>
             <div class="nav__description">Search ISBN</div>
           </li>
 
           <li class="nav__popup-item">
             <button on:click="{searchHandler}" class="button nav__button button--search" type="button" data-component="SearchAuthor">
-              <img class="button__icon" src="./icons/buttons/search.svg" alt="Search" width="35px" height="35px" />
+              <img class="button__icon" src="./icons/buttons/search.svg" alt="Search" width="36px" height="36px" />
             </button>
             <div class="nav__description">Search Author</div>
           </li>
@@ -106,19 +106,19 @@
   }
 
   .nav__popup-list {
+    align-content: center;
     align-items: center;
     background: var(--background-section);
     border-radius: var(--radius-section);
     bottom: 100px;
     box-shadow: var(--box-shadow-section);
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 15px;
+    grid-template-rows: repeat(3, 44px);
     height: 195px;
-    justify-content: center;
     left: 0;
     list-style: none;
-    padding-left: 20px;
+    padding-left: 15px;
     position: absolute;
     width: 245px;
   }
